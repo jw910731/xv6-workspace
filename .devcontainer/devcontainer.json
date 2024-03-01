@@ -4,6 +4,8 @@
 	"name": "Ubuntu",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "ghcr.io/jw910731/xv6-workspace",
+	"workspaceMount": "source=${localWorkspaceFolder}/xv6-riscv,target=/workspace,type=bind",
+	"workspaceFolder": "/workspace"
 	
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
