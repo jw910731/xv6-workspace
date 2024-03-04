@@ -7,3 +7,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get -y install jq tmux unzip
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get clean -y
 
+EXPOSE 26000
+
+RUN useradd -U -u 1000 -m user
+USER user
