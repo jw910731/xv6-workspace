@@ -2,7 +2,12 @@
 
 This repository provide dev container environment to quickly get started with xv6-riscv development. For a list of viable options that supports dev container, please see [here](https://containers.dev/supporting).
 
-# Quick start with Visual Studio Code
+# Start with Visual Studio Code
+## Prerequisite
+1. Install docker and ensure it is working fine. (Test out command `docker ps` and it shouldn't output any error)
+2. Install Visual Studio Code and install its plugin, [Dev Container Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers).
+
+## Quick Start
 Clone the container repository and xv6 source code into current working direcotry.
 ```bash
 git clone --recursive https://github.com/jw910731/xv6-workspace.git
