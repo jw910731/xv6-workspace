@@ -3,7 +3,7 @@
 {
 	"name": "Ubuntu",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "ghcr.io/jw910731/xv6-workspace",
+	"image": "ghcr.io/jw910731/xv6-workspace:latest",
 	"workspaceMount": "source=${localWorkspaceFolder}/xv6-riscv,target=/workspaces,type=bind",
 	"workspaceFolder": "/workspaces",
 	"customizations": {
@@ -21,7 +21,8 @@
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	"forwardPorts": [
 		"26000:26000"
-	]
+	],
+	"initializeCommand": "docker pull ghcr.io/jw910731/xv6-workspace:latest"
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "uname -a",
