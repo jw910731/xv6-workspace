@@ -11,3 +11,7 @@ EXPOSE 26000
 
 RUN useradd -U -u 1000 -G sudo -m -p "" -s "/bin/bash" user 
 USER user
+WORKDIR /home/user
+
+COPY --chown=user:user ./gdbinit /home/user/.config/gdb/gdbinit
+COPY --chown=user:user ./bashrc /home/user/.bashrc
