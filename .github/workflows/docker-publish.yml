@@ -81,7 +81,7 @@ jobs:
       - name: Pre-build dev container image
         uses: devcontainers/ci@v0.3
         with:
-          imageName: ghcr.io/jw910731/xv6-workspace
+          imageName: registry.hub.docker.com/ubuntu:jammy
           platform: linux/amd64,linux/arm64
           imageTag: ${{ steps.meta.outputs.tags }}
           cacheFrom: type=gha
